@@ -19,7 +19,9 @@ int YB = int.Parse(Console.ReadLine()!);
 Console.Write("Введите координату ZB: ");
 int ZB = int.Parse(Console.ReadLine()!);
 
-double AB = Math.Sqrt((XB - XA) * (XB - XA) + (YB - YA) * (YB - YA) + (ZB - ZA) * (ZB - ZA));
+// double AB = Math.Sqrt((XB - XA) * (XB - XA) + (YB - YA) * (YB - YA) + (ZB - ZA) * (ZB - ZA));
+
+double AB = Math.Sqrt(Math.Pow((XB - XA), 2) + Math.Pow((YB - YA), 2) + Math.Pow((ZB - ZA), 2));
 
 void distance(double result)
 {
